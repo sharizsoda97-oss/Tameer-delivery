@@ -2163,6 +2163,7 @@
     let dashboardFilterState = { customers: new Set(), products: new Set(), vehicles: new Set() };
     let customerFilterState = new Set();
     let clockInterval = null, onlineInterval = null, skuRowCount = 0;
+    let _listenersActive = false;
     let currentOnlineUsers = [];
     let currentTab = 'dashboard';
 
